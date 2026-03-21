@@ -86,7 +86,6 @@ export default function ProductComparison() {
 
               <WhatsAppButton
                 text="Quero Este Produto"
-                variant={product.popular ? 'primary' : 'secondary'}
                 className="w-full justify-center"
               />
             </div>
@@ -95,7 +94,7 @@ export default function ProductComparison() {
 
         <div className="text-center mt-12">
           <p className="text-gray-400 mb-6">Ainda tem dúvidas sobre qual escolher?</p>
-          <WhatsAppButton text="Consultar Especialista" variant="secondary" />
+          <WhatsAppButton text="Consultar Especialista" />
         </div>
       </div>
     </section>

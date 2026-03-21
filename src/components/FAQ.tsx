@@ -33,38 +33,42 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="duvidas" className="py-20 bg-gradient-to-b from-white to-blue-50">
+    <section id="duvidas" className="py-20 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Título */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Dúvidas{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
               Frequentes
             </span>
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-300">
             Tudo o que você precisa saber
           </p>
         </div>
 
+        {/* FAQ */}
         <div className="space-y-4 mb-12">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg border border-blue-100 overflow-hidden transition-all duration-300 hover:shadow-xl"
+              className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-lg border border-blue-500/30 overflow-hidden transition-all duration-300 hover:shadow-2xl"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left"
+                className="w-full px-8 py-6 flex items-center justify-between text-left group"
               >
-                <span className="text-lg font-semibold text-gray-900 pr-4">
+                <span className="text-lg font-semibold text-white pr-4">
                   {faq.question}
                 </span>
+
                 <ChevronDown
                   size={24}
-                  className={`text-blue-600 flex-shrink-0 transition-transform duration-300 ${
+                  className={`text-yellow-400 flex-shrink-0 transition-all duration-300 ${
                     openIndex === index ? 'rotate-180' : ''
-                  }`}
+                  } group-hover:scale-110`}
                 />
               </button>
 
@@ -74,16 +78,21 @@ export default function FAQ() {
                 }`}
               >
                 <div className="px-8 pb-6">
-                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  <p className="text-gray-300 leading-relaxed">
+                    {faq.answer}
+                  </p>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-12 text-white shadow-2xl">
-          <h3 className="text-3xl font-bold mb-4">Ainda tem dúvidas?</h3>
-          <p className="text-xl mb-8 opacity-90">
+        {/* CTA */}
+        <div className="text-center bg-gradient-to-br from-slate-800 to-slate-900 border border-blue-500/30 rounded-3xl p-12 text-white shadow-2xl">
+          <h3 className="text-3xl font-bold mb-4">
+            Ainda tem dúvidas?
+          </h3>
+          <p className="text-xl mb-8 text-gray-300">
             Nossa equipe está pronta para ajudar você
           </p>
           <WhatsAppButton text="Tirar Minhas Dúvidas Agora" />

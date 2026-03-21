@@ -17,9 +17,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3 group cursor-pointer">
-            <svg viewBox="0 0 24 24" className="w-8 h-8 text-yellow-500 group-hover:text-yellow-400 transition-colors" fill="currentColor">
-              <path d="M12 2L20 10L16 14L20 18L12 26L4 18L8 14L4 10L12 2Z" />
-            </svg>
+            <img
+              src="/public/image/shark (2).png"
+              alt="Empório Shark Logo"
+              className="h-8 w-8 group-hover:animate-pulse transition duration-300"
+            />
             <h1 className="text-2xl font-black">
               <span className="text-white">Empório</span>
               <span className="text-yellow-500">Shark</span>

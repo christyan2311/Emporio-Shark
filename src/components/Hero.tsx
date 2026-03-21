@@ -49,7 +49,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 rounded-3xl blur-3xl"></div>
             <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl shadow-2xl p-8 border border-yellow-600/30">
               <img
-                src="https://images.pexels.com/photos/3683041/pexels-photo-3683041.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/public/image/WhatsApp Image 2026-03-19 at 22.08.33.jpeg"
                 alt="Tratamento Premium"
                 className="w-full h-auto rounded-2xl shadow-xl"
               />
