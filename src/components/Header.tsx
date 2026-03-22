@@ -18,7 +18,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3 group cursor-pointer">
             <img
-              src="/public/image/shark (2).png"
+              src="/public/image/logo_shark.png.png"
               alt="Empório Shark Logo"
               className="h-8 w-8 group-hover:animate-pulse transition duration-300"
             />

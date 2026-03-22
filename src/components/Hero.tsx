@@ -59,7 +59,7 @@ export default function Hero() {
             
             <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl shadow-2xl p-4 sm:p-8 border border-yellow-600/30">
               <img
-                src="/public/image/WhatsApp Image 2026-03-19 at 22.08.33.jpeg"
+                src="/public/image/flay.png.jpeg"
                 alt="Tratamento Premium"
                 className="w-full h-auto rounded-2xl shadow-xl"
               />

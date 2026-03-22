@@ -10,7 +10,7 @@ export default function HowItWorks() {
           {/* Imagem */}
           <div className="order-2 lg:order-1">
             <img
-              src="/public/image/250525-info-como-age-tirzepatida-semaglutida.avif"
+              src="/public/image/como_funciona.png.avif"
               alt="Como funciona"
               className="rounded-3xl shadow-2xl"
             />
