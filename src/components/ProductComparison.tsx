@@ -6,27 +6,27 @@ export default function ProductComparison() {
     {
       name: 'Tirzec 15',
       popular: true,
-      price: 'R$ 1.499',
-      period: '/mês',
+      price: 'R$ 2.000',
+      promo: 'Ampola com 2ml',
       features: [
-        'Tirzepatida 15mg',
-        'Redução de até 20% do peso',
-        'Controle de apetite avançado',
-        'Melhora metabólica',
-        'Suporte técnico',
+        'Redução Substancial de Peso: Perda de peso corporal entre 15% e 22,5% em tratamentos de longo prazo.',
+        'Controle do Apetite e Saciedade: Atua no sistema nervoso central para reduzir a fome e retarda o esvaziamento gástrico, prolongando a saciedade.',
+        'Saúde Cardiovascular: Auxilia na redução da pressão arterial e melhora o perfil lipídico (colesterol e triglicerídeos).',
+        'Redução da Gordura Hepática: Eficaz na diminuição da gordura no fígado (esteatose hepática).',
+        'Menos Efeitos Colaterais: A atuação no receptor GIP pode ajudar a mitigar náuseas comuns em outros tratamentos similares.'
       ],
     },
     {
       name: 'T.G. 15',
       popular: false,
-      price: 'R$ 1.299',
-      period: '/mês',
+      price: 'R$ 650',
+      promo: 'Caixa com 4 por R$ 1.800',
       features: [
-        'Tirzepatida 15mg',
-        'Perda de peso eficaz',
-        'Controle de apetite',
-        'Aplicação semanal',
-        'Orientação profissional',
+        'Aceleração do Metabolismo: O Glucagon estimula a queima de energia e a quebra de gordura (lipólise), potencializando o emagrecimento.',
+        'Preservação de Massa Magra: Ajuda a manter a musculatura enquanto foca na redução da massa gorda, especialmente quando associado a exercícios.',
+        'Ação Tripla Hormonal: Combina os benefícios do GIP e GLP-1 (saciedade e insulina) com o estímulo metabólico do Glucagon.',
+        'Melhora da Resistência Insulínica: Sinergia que favorece pacientes com quadros severos de resistência à insulina e síndrome metabólica.',
+        'Eficiência Termogênica: Aumenta a oxidação de ácidos graxos, auxiliando na redução da gordura visceral.',
       ],
     },
   ];
@@ -74,13 +74,17 @@ export default function ProductComparison() {
                   {product.name}
                 </h3>
 
-                <div className="flex items-end justify-center gap-1 flex-wrap">
+                <div className="flex flex-col items-center">
                   <span className="text-3xl sm:text-5xl font-black bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
                     {product.price}
                   </span>
-                  <span className="text-gray-400 mb-1 sm:mb-2 text-sm sm:text-lg">
-                    {product.period}
-                  </span>
+
+                  {/* Promo (apenas TG) */}
+                  {product.promo && (
+                    <span className="text-sm sm:text-base text-green-400 font-semibold mt-1">
+                      {product.promo}
+                    </span>
+                  )}
                 </div>
               </div>
 
