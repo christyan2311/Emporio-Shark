@@ -25,7 +25,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="flex items-center justify-center gap-2 text-2xl font-bold mb-2">
             <img
-              src="/image/shark (2).png"
+              src="./image/logo_shark.png.png"
               alt="Empório Shark Logo"
               className="h-8 w-8"
             />
